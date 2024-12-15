@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Website Design - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="navbar-left">
+        <a href="index.html" class="logo"><img src="images/logo.png"></a>
+
+        <div class="search-box">
+            <img src="images/search.png">
+            <input type="text" placeholder="Search">
+        </div>
+
+    </div>
+    <div class="navbar-center">
+        <ul>
+            <li><a href="#" class="active-link"><img src="images/home.png"> <span>Home</span></a></li>
+            <li><a href="#"><img src="images/network.png"> <span>My Network</span></a></li>
+            <li><a href="#"><img src="images/jobs.png"> <span>Jobs</span></a></li>
+            <li><a href="#"><img src="images/message.png"> <span>Messaging</span></a></li>
+            <li><a href="#"><img src="images/notification.png"> <span>Notifications</span></a></li>
+        </ul>
+    </div>
+    <div class="navbar-right">
+        <div class="online">
+            <img src="images/yellow bg porfile.png" class="nav-profile-img" onclick="toggleMenu()">
+        </div>
+    </div>
+<!-- --------------- profile-drop-down-menu---------- -->
+<div class="profile-menu-wrap" id="profileMenu">
+    <div class="profile-menu">
+        <div class="user-info">
+            <img src="images/yellow bg porfile.png">
+            <div>
+                <h3>Akshara T</h3>
+                <a href="profile.html">See your profile</a>
+            </div>
+        </div>
+        <hr>
+        <a href="#" class="profile-menu-link">
+            <img src="images/feedback.png">
+            <p>Give Feedback</p>
+            <span>></span>
+        </a>
+        <a href="#" class="profile-menu-link">
+            <img src="images/setting.png">
+            <p>Settings & Privacy</p>
+            <span>></span>
+        </a>
+        <a href="#" class="profile-menu-link">
+            <img src="images/help.png">
+            <p>Help & Support</p>
+            <span>></span>
+        </a>
+        <a href="#" class="profile-menu-link">
+            <img src="images/display.png">
+            <p>Display & Accessiblity</p>
+            <span>></span>
+        </a>
+        <a href="#" class="profile-menu-link">
+            <img src="images/logout.png">
+            <p>Logout</p>
+            <span>></span>
+        </a>
+    </div>
+</div>
+
+</nav>
+
+<!-- -------------- navbar close-------- -->
+
+<div class="container">
+<!-- -------left-sidebar------------ -->
+    <div class="left-sidebar">
+        <div class="sidebar-profile-box">
+            <img src="images/cover-pic.png" width="100%">
+            <div class="sidebar-profile-info">
+                <img src="images/yellow bg porfile.png">
+                <h1>Akshara T</h1>
+                <h3>MCA Student at Dr.SNS Rajalakshmi college of arts and science</h3>
+                <ul>
+                    <li>Your profile views<span>52</span></li>
+                    <li>Your post views<span>810</span></li>
+                    <li>Your connections<span>205</span></li>
+                </ul>
+            </div>
+            <div class="sidebar-profile-link">
+                <a href="#"><img src="images/items.png"> My items</a>
+                <a href="#"><img src="images/premium.png"> Try Premium</a>
+            </div>
+        </div>
+
+        <div class="sidebar-activity" id="sidebarActivity">
+            <h3>RECENT</h3>
+            <a href="#"><img src="images/recent.png"> Web Development</a>
+            <a href="#"><img src="images/recent.png"> User Interface</a>
+            <a href="#"><img src="images/recent.png"> Web Deisgn</a>
+            <a href="#"><img src="images/recent.png"> Game Developer</a>
+            <a href="#"><img src="images/recent.png"> Python Learning</a>
+            <a href="#"><img src="images/recent.png"> UX/UI</a>
+            <h3>GROUPS</h3>
+            <a href="#"><img src="images/group.png"> Web Design Group</a>
+            <a href="#"><img src="images/group.png"> HTML & CSS Learners</a>
+            <a href="#"><img src="images/group.png"> Python & JavaScript Group</a>
+            <a href="#"><img src="images/group.png"> Learn Coding Online</a>
+            <h3>HASHTAG</h3>
+            <a href="#"><img src="images/hashtag.png"> webdevelopment</a>
+            <a href="#"><img src="images/hashtag.png"> userinterface</a>
+            <a href="#"><img src="images/hashtag.png"> python</a>
+            <div class="discover-more-link">
+                <a href="">Discover more</a>
+            </div>
+        </div>
+
+        <p id="showMoreLink" onclick="toggleActivity()">Show more <b>+</b></p>
+    </div>
+<!-- -----------------main-content------------ -->
+    <div class="main-content">
+
+        <div class="create-post">
+            <div class="create-post-input">
+                <img src="images/yellow bg porfile.png">
+                <textarea rows="2" placeholder="Write a post"></textarea>
+            </div>
+            <div class="create-post-links">
+                <li><img src="images/photo.png">Photo</li>
+                <li><img src="images/video.png">Video</li>
+                <li><img src="images/event.png">Event</li>
+                <li>Post</li>
+            </div>
+        </div>
+        <div class="sort-by">
+            <hr>
+            <p>Sort by: <span>top <img src="images/down-arrow.png"></span></p>
+        </div>
+
+        <div class="post">
+            <div class="post-author">
+                <img src="images/bharathy.png">
+                <div>
+                    <h1>Sabeesh Novin</h1>
+                    <small>Cloud Engineer | Microsoft </small>
+                    <small>2 hours ago</small>
+                </div>
+            </div>
+            <p>A cloud engineer is an IT professional responsible for any technological duties associated with cloud computing, including design, planning, management, maintenance and support.</p>
+            <img src="images/cloud.png" width="100%">
+
+            <div class="post-stats">
+                <div>
+                    <img src="images/thumbsup.png">
+                    <img src="images/love.png">
+                    <img src="images/clap.png">
+                    <span class="liked-users">Srinithin and 75 others</span>
+                </div>
+                <div>
+                    <span>22 comments &middot; 40 shares</span>
+                </div>
+            </div>
+            <div class="post-activity">
+                <div class="mypro">
+                    <img src="images/yellow bg porfile.png" class="post-activity-user-icon">
+                    <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+                </div>
+                <div class="post-activity-link">
+                    <img src="images/like.png">
+                    <span>Like</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="images/comment.png">
+                    <span>Comment</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="images/share.png">
+                    <span>Share</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="images/send.png">
+                    <span>Send</span>
+                </div>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-author">
+                <img src="images/ramaa.png">
+                <div>
+                    <h1>Ramaa Shree</h1>
+                    <small>Photographer </small>
+                    <small>4 hours ago</small>
+                </div>
+            </div>
+            <p>Photography is the art, application, and practice of creating images by recording light, either electronically by means of an image sensor, or chemically by means of a light-sensitive material such as photographic film.</p>
+            <img src="images/photography.png" width="100%">
+
+            <div class="post-stats">
+                <div>
+                    <img src="images/thumbsup.png">
+                    <img src="images/love.png">
+                    <img src="images/clap.png">
+                    <span class="liked-users">THrisha Vahini and 50 others</span>
+                </div>
+                <div>
+                    <span>13 comments &middot; 10 shares</span>
+                </div>
+            </div>
+            <div class="post-activity">
+                <div class="mypro">
+                    <img src="images/yellow bg porfile.png" class="post-activity-user-icon">
+                    <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+                </div>
+                <div class="post-activity-link">
+                    <img src="images/like.png">
+                    <span>Like</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="images/comment.png">
+                    <span>Comment</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="images/share.png">
+                    <span>Share</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="images/send.png">
+                    <span>Send</span>
+                </div>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-author">
+                <img src="images/sandiz.png">
+                <div>
+                    <h1>Santhiya</h1>
+                    <small>Head of Marketing | TCS</small>
+                    <small>1 hours ago</small>
+                </div>
+            </div>
+            <p>Marketing encompasses every part of a plan to turn a prospective consumer into a happy and satisfied customer. </p>
+            <img src="images/market.jpg" width="100%">
+
+            <div class="post-stats">
+                <div>
+                    <img src="images/thumbsup.png">
+                    <img src="images/love.png">
+                    <img src="images/clap.png">
+                    <span class="liked-users">Thivya Bharathy and 55 others</span>
+                </div>
+                <div>
+                    <span>30 comments &middot; 20 shares</span>
+                </div>
+            </div>
+            <div class="post-activity">
+                <div class="mypro">
+                    <img src="images/yellow bg porfile.png" class="post-activity-user-icon">
+                    <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+                </div>
+                <div class="post-activity-link">
+                    <img src="images/like.png">
+                    <span>Like</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="images/comment.png">
+                    <span>Comment</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="images/share.png">
+                    <span>Share</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="images/send.png">
+                    <span>Send</span>
+                </div>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-author">
+                <img src="images/sab.png">
+                <div>
+                    <h1>Thivya Bharathy</h1>
+                    <small>Software Developer | Cognizant </small>
+                    <small>5 hours ago</small>
+                </div>
+            </div>
+            <p>Front-end web development is the development of the graphical user interface of a website through the use of HTML, CSS, and JavaScript so users can view and interact with that website.</p>
+            <img src="images/frontend.png" width="100%">
+
+            <div class="post-stats">
+                <div>
+                    <img src="images/thumbsup.png">
+                    <img src="images/love.png">
+                    <img src="images/clap.png">
+                    <span class="liked-users">Santhiya and 50 others</span>
+                </div>
+                <div>
+                    <span>20 comments &middot; 60 shares</span>
+                </div>
+            </div>
+            <div class="post-activity">
+                <div class="mypro">
+                    <img src="images/yellow bg porfile.png" class="post-activity-user-icon">
+                    <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+                </div>
+                <div class="post-activity-link">
+                    <img src="images/like.png">
+                    <span>Like</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="images/comment.png">
+                    <span>Comment</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="images/share.png">
+                    <span>Share</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="images/send.png">
+                    <span>Send</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+<!-- ------------right-sidebar--------------- -->
+    <div class="right-sidebar">
+        <div class="sidebar-news">
+            <img src="images/more.png" class="info-icon">
+            <h3 >Trending News</h3>
+            <a style="font-size: 15px;" href="#">High demand for skilled manpower</a>
+            <span style="font-size: 14px;">1d ago &middot; 10,934 readers</span>
+
+            <a style="font-size: 15px;" href="#">Careers growing horizontally too</a>
+            <span style="font-size: 14px;">19h ago &middot; 1,552 readers</span>
+
+            <a style="font-size: 15px;" href="#">Less work visa for US, more for UK</a>
+            <span style="font-size: 14px;">1d ago &middot; 27,290 readers</span>
+
+            <a style="font-size: 15px;" href="#">More hiring = higher confidence?</a>
+            <span style="font-size: 14px;">18h ago &middot; 8,208 readers</span>
+
+            <a style="font-size: 15px;" href="#">Elon Musk is the world's first richest</a>
+            <span style="font-size: 14px;">12h ago &middot; 4,205 readers</span>
+
+            <a href="" class="read-more-link">Read More</a>
+        </div>
+
+        <div class="sidebar-ad">
+            <small>Ad &middot; &middot; &middot;</small>
+            <p>Master the 5 priciples of web design</p>
+            <div>
+                <img src="images/yellow bg porfile.png">
+                <img src="images/mi-logo.png">
+            </div>
+            <b>Brand and Demand in Xiaomi</b>
+            <a href="" class="ad-link">Learn More</a>
+        </div>
+
+        <div class="sidebar-useful-links">
+            <a href="#">About</a>
+            <a href="#">Accessiblity</a>
+            <a href="#">Help Center</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Advertising</a>
+            <a href="#">Get the App</a>
+            <a href="#">More</a>
+
+            <div class="copyright-msg">
+                <img src="images/logo.png">
+                <p>Linkedup &#169; 2024. All right reserved</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+
+    let profileMenu = document.getElementById("profileMenu");
+
+    function toggleMenu(){
+        profileMenu.classList.toggle("open-menu");
+    }
+
+</script>
+
+<script>
+
+    let sideActivity = document.getElementById("sidebarActivity");
+    let moreLink = document.getElementById("showMoreLink");
+
+    function toggleActivity(){
+        sideActivity.classList.toggle("open-activity");
+
+        if(sideActivity.classList.contains("open-activity")){
+            moreLink.innerHTML = "Show less <b>-</b>";
+        }
+        else{
+            moreLink.innerHTML = "Show more <b>+</b>";
+        }
+    }
+
+</script>
+
+
+
+</body>
+</html>
